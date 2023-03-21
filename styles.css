@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+  position: relative;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+#message-container {
+  font-size: 24px;
+  color: #FFFFFF;
+  position: absolute;
+  animation: scroll-message 10s linear infinite;
+}
+
+@keyframes scroll-message {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
